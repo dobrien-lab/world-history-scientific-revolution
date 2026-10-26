@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A short-video study guide for World History Unit II: The Scientific Revolution." />
+    <meta name="theme-color" content="#17251f" />
+    <title>Scientific Revolution · Unit II</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Unit II home">
+        <span class="brand-mark">II</span>
+        <span>World History</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#watch">Watch</a>
+        <a href="#review">Review</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Unit II · Video study guide</p>
+          <h1>The Scientific<br /><em>Revolution</em></h1>
+          <p class="lede">Five quick videos. One big shift: innovation, observation, and new evidence began to challenge old ways of understanding the world.</p>
+          <a class="button" href="#watch">Start the lesson <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-art" aria-label="Decorative orbit diagram">
+          <div class="orbit orbit-one"><span></span></div>
+          <div class="orbit orbit-two"><span></span></div>
+          <div class="sun"></div>
+          <p>Observe<br />Question<br />Test</p>
+        </div>
+      </section>
+
+      <section class="lesson-intro" aria-labelledby="lesson-heading">
+        <p class="section-number">01</p>
+        <div>
+          <p class="eyebrow">Your mission</p>
+          <h2 id="lesson-heading">Follow the spread of new ideas.</h2>
+        </div>
+        <p>As you watch, notice how better systems, new tools, and direct observation helped knowledge travel—and challenged authority.</p>
+      </section>
+
+      <section class="watch-section" id="watch" aria-labelledby="watch-heading">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Short video playlist</p>
+            <h2 id="watch-heading">Watch all five</h2>
+          </div>
+          <div class="progress-wrap" aria-live="polite">
+            <span id="progressText">0 of 5 complete</span>
+            <div class="progress-track" aria-hidden="true"><span id="progressBar"></span></div>
+          </div>
+        </div>
+
+        <div class="video-grid" id="videoGrid"></div>
+      </section>
+
+      <section class="review-section" id="review" aria-labelledby="review-heading">
+        <div class="review-title">
+          <p class="section-number">02</p>
+          <div>
+            <p class="eyebrow">Quick review</p>
+            <h2 id="review-heading">Four ideas to know</h2>
+          </div>
+        </div>
+        <div class="terms">
+          <article>
+            <span>01</span>
+            <h3>Heliocentric</h3>
+            <p>A sun-centered model of the solar system.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Empiricism</h3>
+            <p>Building knowledge through observation and experience.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Printing press</h3>
+            <p>A technology that helped new ideas spread faster and farther.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Scientific method</h3>
+            <p>A repeatable process for asking and testing questions.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="exit-ticket" aria-labelledby="exit-heading">
+        <div>
+          <p class="eyebrow">Exit ticket</p>
+          <h2 id="exit-heading">What changed because of the Scientific Revolution?</h2>
+          <p>Write two or three sentences. Your answer stays on this device.</p>
+        </div>
+        <div class="response-box">
+          <label for="exitResponse">My response</label>
+          <textarea id="exitResponse" rows="6" placeholder="Before the Scientific Revolution… After the Scientific Revolution…"></textarea>
+          <div class="save-row">
+            <span id="saveStatus" aria-live="polite">Saved automatically</span>
+            <button class="text-button" id="clearProgress" type="button">Reset lesson</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>World History · Unit II</p>
+      <p>Curiosity changed the world.</p>
+    </footer>
+
+    <dialog id="videoDialog" aria-labelledby="dialogTitle">
+      <div class="dialog-bar">
+        <div>
+          <p class="eyebrow">Now watching</p>
+          <h2 id="dialogTitle">Video</h2>
+        </div>
+        <button id="closeDialog" class="close-button" aria-label="Close video">×</button>
+      </div>
+      <div class="player-wrap" id="playerWrap"></div>
+      <a id="youtubeLink" class="youtube-link" href="#" target="_blank" rel="noopener">Open on YouTube ↗</a>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
