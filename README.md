@@ -4,5 +4,4 @@ A student-friendly short-video study guide for World History Unit II. The site i
 
 ## Publish
 
-This repository includes a GitHub Pages workflow. In the repository settings, choose **Pages → Source → GitHub Actions**. Every push to `main` will publish the static site.
-
+GitHub Pages publishes this static site from the root of the `main` branch.
